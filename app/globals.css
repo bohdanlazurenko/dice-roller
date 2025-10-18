@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white;
+  }
+}
+
+@layer components {
+  .dice-face {
+    @apply relative w-24 h-24 bg-white rounded-xl shadow-2xl flex items-center justify-center;
+  }
+  
+  .dice-dot {
+    @apply absolute w-4 h-4 bg-gray-900 rounded-full;
+  }
+}
